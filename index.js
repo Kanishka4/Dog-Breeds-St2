@@ -4,9 +4,37 @@ function addElementsToList(url,breedName,lifeSpan,breedGroup){
     var name=document.createElement('h4');
     var life=document.createElement('p');
     var group=document.createElement('p');
+    var bold=document.createElement('strong');
     name.innerText=breedName;
     life.append("Life-Span : "+lifeSpan);
-    group.append("Breed : "+breedGroup);
+    bold.append("Breed : "+breedGroup);
+    group.append(bold);
+    switch(breedGroup){
+        case 'Working':
+            group.classList.add('working');
+            break;
+        case 'Sporting':
+            group.classList.add('sporting');
+            break;
+        case 'Non-Sporting':
+                group.classList.add('non-sporting');
+                break;
+         case 'Terrier':
+                    group.classList.add('terrier');
+                    break;
+         case 'Hound':
+            group.classList.add('hound');
+            break;
+        case 'Herding':
+            group.classList.add('herding');
+            break;
+        case 'Toy':
+            group.classList.add('toy');
+            break;
+        default:
+            break;
+
+    }
     image.src=url;
     element.append(image);
     element.append(name);

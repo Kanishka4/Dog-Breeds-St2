@@ -15,3 +15,31 @@ img{
 .btn{
     margin: 2rem;
 }
+
+.working{
+    color:#568203;
+}
+
+.sporting{
+    color:blue;
+}
+
+.non-sporting{
+    color:#008B8B;
+}
+
+.hound{
+    color:#00A86B;
+}
+
+.terrier{
+    color:#1d1160;
+}
+
+.toy{
+    color:#0066b2;
+}
+
+.herding{
+    color:gray;
+}
