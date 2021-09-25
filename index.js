@@ -5,12 +5,12 @@ function addElementsToList(url,breedName,lifeSpan,breedGroup){
     var life=document.createElement('p');
     var group=document.createElement('p');
     name.innerText=breedName;
-    life.innerHTML=`Life-span: ${lifeSpan}`;
-    group.innerText=breedGroup;
+    life.append("Life-Span : "+lifeSpan);
+    group.append("Breed : "+breedGroup);
     image.src=url;
     element.append(image);
     element.append(name);
-    element.append(lifeSpan);
+    element.append(life);
     element.append(group);
     document.querySelector('.dogs').append(element);
 }
