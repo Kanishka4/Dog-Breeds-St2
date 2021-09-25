@@ -1,0 +1,17 @@
+.dogs{
+    margin:2rem 2rem; 
+    /* margin-top:2rem; */
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    grid-row-gap: 3%;
+}
+
+img{
+    width: 100%;
+    height: 30vh;
+}
+
+.btn{
+    margin: 2rem;
+}
